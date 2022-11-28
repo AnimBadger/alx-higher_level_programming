@@ -1,0 +1,1 @@
+Printing of texts, variables, indexing and slicing of strings in Python will be covered.
