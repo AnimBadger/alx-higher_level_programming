@@ -1,0 +1,1 @@
+In this project i will be working with conditional statements, loops and functions in python.
