@@ -7,7 +7,7 @@ if __name__ == '__main__':
     elif (n == 1):
         print('{:d} arguement:'.format(n))
         for i in range(1, n + 1):
-            print('{:d}: {:s}'.format(i, sys.argv[i]))
+            print('{:d}: {}'.format(i, sys.argv[i]))
     else:
         print('{:d} arguments:'.format(n))
         for i in range(1, n + 1):
