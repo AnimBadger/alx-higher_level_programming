@@ -18,5 +18,5 @@ if __name__ == '__main__':
         print('{} {} {} = {}'.format(a, opp, b, calculator_1.sub(a, b)))
     elif (opp == '*'):
         print('{} {} {} = {}'.format(a, opp, b, calculator_1.mul(a, b)))
-    else: 
-    	print('{} {} {} = {}'.format(a, opp, b, calculator_1.div(a, b)))
+    else:
+        print('{} {} {} = {}'.format(a, opp, b, calculator_1.div(a, b)))

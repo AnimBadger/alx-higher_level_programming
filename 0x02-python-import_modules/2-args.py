@@ -5,10 +5,10 @@ if __name__ == '__main__':
     if n <= 1:
         print('{:d} arguments.'.format(0))
     elif (n == 2):
-        print('{:d} arguement:'.format(n - 1))
+        print('{:d} arguement.'.format(n - 1))
         for i in range(1, n):
-            print('{:d}: {}'.format(i, sys.argv[i]))
+            print('{:d}: {:s}'.format(i, sys.argv[i]))
     else:
         print('{:d} arguments.'.format(n - 1))
         for i in range(1, n):
-            print('{:d}: {}'.format(i, sys.argv[i]))
+            print('{:d}: {:s}'.format(i, sys.argv[i]))
