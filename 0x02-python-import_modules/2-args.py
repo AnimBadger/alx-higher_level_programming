@@ -5,7 +5,7 @@ if __name__ == '__main__':
     if n < 1:
         print('{:d} arguments.'.format(n))
     elif (n == 1):
-        print('{:d} arguement:'.format(n))
+        print('{:d} argument:'.format(n))
         for i in range(1, n + 1):
             print('{:d}: {}'.format(i, sys.argv[i]))
     else:
