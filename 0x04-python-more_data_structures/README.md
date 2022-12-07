@@ -1,0 +1,1 @@
+In this repository we will look at more common data structures in Python.
