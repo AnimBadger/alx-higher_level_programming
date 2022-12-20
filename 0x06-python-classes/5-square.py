@@ -47,10 +47,10 @@ class Square:
         '''
 
         return self.__size ** 2
-	
+
     def my_print(self):
         '''Print out square with character #'''
-        
+
         if self.__size != 0:
             for i in range(self.__size):
                 for j in range(self.__size):
