@@ -4,4 +4,4 @@
 
 def lookup(obj):
     '''function to return attributes'''
-    return dict(obj)
+    return dir(obj)
