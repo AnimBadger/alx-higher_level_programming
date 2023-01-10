@@ -3,7 +3,6 @@ import json
 '''module to save file using JSON representation'''
 
 
-
 def save_to_json(my_obj, filename):
     '''
     function to save file using JSON
