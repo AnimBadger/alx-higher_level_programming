@@ -4,7 +4,7 @@
 
 def class_to_json(obj):
     '''function to return dictionary of obj'''
-    
+
     result = {}
     if hasattr(obj, '__dict__'):
         result = obj.__dict__.copy()
