@@ -3,5 +3,10 @@
 
 
 def write_file(filename='', text=''):
-    with open('filename', 'w', encoding='utf-8') as file:
+    '''function to write text to file
+    Args:
+    filename: filename
+    text: text to be written
+    '''
+    with open(filename, 'w', encoding='utf-8') as file:
         return file.write(text)
