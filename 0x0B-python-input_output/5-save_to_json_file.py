@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 '''module to save file using JSON representation'''
+import json
 
 
 def save_to_json(my_obj, filename):
