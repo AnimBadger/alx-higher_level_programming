@@ -26,7 +26,27 @@ Traceback (most recent call last):
 OverflowError: cannot convert float infinity to integer
 
 adding two strings
-add_integer('a','b')
-Traceback (most recent call last)
+>>>add_integer('a','b')
+Traceback (most recent call last):
 ...
 TypeError: must be an integer
+
+adding two float numbers
+>>> add_integer(2.5, 2.5)
+4
+
+only one argument
+>>> add_integer(2)
+100
+
+no argument to function
+>>> add_integer()
+Traceback (most recent call last)
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+adding NaN
+>>> add_integer(0, float('nan))
+Traceback (most recent call last):
+...
+ValueError: cannot convert float to NaN integer
