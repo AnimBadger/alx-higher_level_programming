@@ -1,0 +1,1 @@
+This repository I will add all the concepts to solve problems and prepare for the next tasks
