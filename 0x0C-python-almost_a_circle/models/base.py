@@ -32,4 +32,22 @@ class Base:
             else:
                 list_json = [listed.to_dictionary() for listed in list_objs]
                 file.write(Base.to_json_string(list_json))
-             
+    
+    @staticmethod
+    def from_json_string(json_string):
+        '''static method that deserialize json file'''
+        if json_string is None or json_string == '[]':
+            return []
+        else:
+            return json.loads(json_string)
+        
+    @classmethod
+    def create(cls, **dictionary):
+        '''return a class instance from dictionary of attributes'''
+        if dictionary and dictionary != {}:
+            if cls.__name__ == 'Rectangle':
+                new = cls(1,1)
+            else:
+                new = cls(1)
+            new.update(**dictionary)
+            return new
