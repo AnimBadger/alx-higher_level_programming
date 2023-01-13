@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import json
+import csv
 '''Base class module'''
 
 
@@ -51,3 +52,14 @@ class Base:
                 new = cls(1)
             new.update(**dictionary)
             return new
+    
+    @classmethod
+    def load_from_file(cls):
+        '''Return list of classes inherited from file'''
+        filename = cls.__name__ + '.json'
+        try:
+            with open(filename, 'r') as file:
+                list_dict = Base.from_json_string(file.read())
+                return [cls.create(**d) for d in list_dict]
+        except IOError:
+            return []
