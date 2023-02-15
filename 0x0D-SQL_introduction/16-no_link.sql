@@ -1,0 +1,6 @@
+-- list rows without name values
+
+SELECT `score`, `name`
+FROM `second_table`
+WHERE `name` != ""
+ORDER BY `score` DESC
