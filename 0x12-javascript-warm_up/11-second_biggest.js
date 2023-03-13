@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 
 const passed = process.argv.slice(2);
 if (isNaN(passed[0]) || passed.length === 1) {

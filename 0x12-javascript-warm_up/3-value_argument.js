@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 
 const passed = process.argv.slice(2);
 if (passed[0] === undefined) {
