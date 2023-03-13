@@ -1,5 +1,3 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 
-function add (a, b) {
-  return a + b;
-}
+exports.add = (a, b) => a + b;
