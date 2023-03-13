@@ -1,18 +1,18 @@
 #!/usr/bin/env node
 
-const passed = process.argv.slice(2)
+const passed = process.argv.slice(2);
 
-let firstPass = passed[0]
+let firstPass = passed[0];
 
 if (isNaN(firstPass)) {
-  console.log('Missing size')
+  console.log('Missing size');
 } else {
-  firstPass = parseInt(firstPass)
+  firstPass = parseInt(firstPass);
   for (let i = 0; i < firstPass; i++) {
-    let row = ''
+    let row = '';
     for (let j = 0; j < firstPass; j++) {
-      row += 'X'
+      row += 'X';
     }
-    console.log(row)
+    console.log(row);
   }
 }
