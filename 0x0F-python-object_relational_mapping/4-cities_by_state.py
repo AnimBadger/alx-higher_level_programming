@@ -1,17 +1,20 @@
 #!/usr/bin/python3
-''' Select state with names matching arguments'''
+""" Select states with names matching arguments """
 
 
 if __name__ == '__main__':
+    from sys import argv
     import MySQLdb
-    import sys
 
-    user = sys.argv[1]
-    passwd = sys.argv[2]
-    db = sys.argv[3]
+    db_user = argv[1]
+    db_passwd = argv[2]
+    db_name = argv[3]
 
-    database = MySQLdb.connect(host='localhost', user=user,
-                               passwd=passwd, db=db, port=3306)
+    database = MySQLdb.connect(host='localhost',
+                               port=3306,
+                               user=db_user,
+                               passwd=db_passwd,
+                               db=db_name)
 
     cursor = database.cursor()
 
