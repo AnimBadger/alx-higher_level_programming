@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start link class to table in database
+""" prints the first State object from the database hbtn_0e_6_usa
 """
 import sys
 from model_state import Base, State
@@ -15,6 +15,6 @@ if __name__ == "__main__":
     session = Session()
     instance = session.query(State).first()
     if instance is None:
-        print('Nothing')
+        print("Nothing")
     else:
-        print(instance.id, instance.name, sep=': ')
+        print(instance.id, instance.name, sep=": ")
