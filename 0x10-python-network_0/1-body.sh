@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # use curl to GET response
 
 curl -sL "$1"
