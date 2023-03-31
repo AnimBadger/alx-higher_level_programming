@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 # script that fetches the body of request with urllib
 
+
 if __name__ == '__main__':
     import urllib.request
 
