@@ -8,7 +8,6 @@ def find_peak(list_of_integers):
     '''find peak of list of integers'''
     if list_of_integers is None or list_of_integers == []:
         return None
-    low = 0
     high = len(list_of_integers)
     mid = int(len(list_of_integers) // 2)
 
