@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# script that takes url and display the variable in the header
+'''script that takes url and display the variable in the header
+'''
+
 
 if __name__ == '__name__':
     import urllib.request
