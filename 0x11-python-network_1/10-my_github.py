@@ -6,9 +6,9 @@ credentials passed'''
 if __name__ == '__main__':
     import sys
     import requests
-    from requests.auth import AuthBase
+    from requests.auth import HTTPBasicAuth
 
-    auth = AuthBase(sys.argv[1], sys.argv[2])
+    auth = HTTPBasicAuth(sys.argv[1], sys.argv[2])
 
     request = requests.get("https://api.github.com/user", auth=auth)
     print(request.json().get('id'))
