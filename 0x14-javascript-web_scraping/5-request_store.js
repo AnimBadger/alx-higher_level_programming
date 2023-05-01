@@ -6,9 +6,8 @@ const url = process.argv[2];
 const path = process.argv[3];
 
 request(url, function (err, body) {
-  if (err) {
-    console.log(err);
-  } else {
+  if (err == null) {
     fs.writeFileSync(path, body, 'utf-8');
   }
-});
+}
+);
